@@ -81,7 +81,7 @@ fun HomePage() {
                     }
                 }) {
                     Text(
-                        "Welcome to the 48 Laws of Power, a collection of timeless principles for achieving and maintaining power in any situation. These laws, derived from the writings of Robert Greene, provide insights into the dynamics of power, influence, and strategic thinking.",
+                        "Welcome to the 48 Laws of Power, Robert Greene's collection of the most effective strategies for manipulating people as a method of gaining as much power as possible. This site is designed to help you understand and apply these laws in your daily life.",
                     )
                 }
             }
@@ -134,7 +134,7 @@ fun HomePage() {
                             }
                         }) {
                             Text(
-                                "These laws focus on the importance of being mindful of what you say and do. Your words and actions can either build your power or destroy it.",
+                                "The maintenance of your reputation depends on constant upkeep as well as thought to the words you use and the actions you take.",
                             )
                         }
                     }
@@ -170,7 +170,7 @@ fun HomePage() {
                             }
                         }) {
                             Text(
-                                "These laws focus on how to gain and maintain power in social situations. Master these principles to influence and control social dynamics.",
+                                "These laws focus on how to use every opportunity to manipulate another person. Master these principles to influence and control social dynamics.",
                             )
                         }
                     }
@@ -206,7 +206,7 @@ fun HomePage() {
                             }
                         }) {
                             Text(
-                                "These laws teach you how to conceal your true intentions while gathering information that gives you an advantage. The art of deception and intelligence gathering is crucial to maintaining power.",
+                                "These laws teach you how to conceal your true intentions while gathering information that gives you an advantage. The art of deception is crucial to maintaining power.",
                             )
                         }
                     }
@@ -242,7 +242,7 @@ fun HomePage() {
                             }
                         }) {
                             Text(
-                                "These laws focus on how to shape others' perception of you. By controlling your image and how others see you, you can gain significant power and influence.",
+                                "These laws focus on how to shape others' perception of you. By controlling your image and how others see you, you can greatly affect the influence you have over them.",
                             )
                         }
                     }

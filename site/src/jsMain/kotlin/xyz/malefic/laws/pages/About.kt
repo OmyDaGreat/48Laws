@@ -198,7 +198,7 @@ fun AboutPage() {
                                         textAlign("center")
                                     }
                                 }) {
-                                    Text("Kotlin + Compose for Web + Kobweb Framework")
+                                    Text("Kotlin + Kobweb")
                                 }
                             }
                         }
