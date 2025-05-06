@@ -1,443 +1,96 @@
+@file:Suppress("ktlint:standard:max-line-length")
+
 package xyz.malefic.laws.pages
 
 import androidx.compose.runtime.Composable
-import com.varabyte.kobweb.compose.css.FontWeight
-import com.varabyte.kobweb.compose.css.TextAlign
-import com.varabyte.kobweb.compose.foundation.layout.Box
-import com.varabyte.kobweb.compose.foundation.layout.Column
-import com.varabyte.kobweb.compose.foundation.layout.Row
-import com.varabyte.kobweb.compose.foundation.layout.Spacer
-import com.varabyte.kobweb.compose.ui.Alignment
-import com.varabyte.kobweb.compose.ui.Modifier
-import com.varabyte.kobweb.compose.ui.graphics.Colors
-import com.varabyte.kobweb.compose.ui.modifiers.*
 import com.varabyte.kobweb.core.Page
-import org.jetbrains.compose.web.css.*
-import org.jetbrains.compose.web.dom.*
-import xyz.malefic.laws.components.Navigation
+import xyz.malefic.laws.components.LawBox
+import xyz.malefic.laws.components.LawDescription
+import xyz.malefic.laws.components.LawTitle
+import xyz.malefic.laws.components.PageHeader
+import xyz.malefic.laws.components.PageLayout
+import xyz.malefic.laws.components.VerticalSpacer
 
 @Page("/laws8-17")
 @Composable
 fun Laws8_17Page() {
-    Column(
-        modifier = Modifier
-            .fillMaxSize()
-            .backgroundColor(rgb(30, 30, 50)), // Dark blue-black for power
-        horizontalAlignment = Alignment.CenterHorizontally,
-    ) {
-        Navigation()
+    PageLayout {
+        PageHeader(
+            title = "LAWS 8-17: ACQUIRE POWER IN EVERY SOCIAL INTERACTION",
+            subtitle = "These laws focus on how to use every opportunity to manipulate another person. Master these principles to influence and control social dynamics.",
+        )
 
-        Column(
-            modifier = Modifier
-                .fillMaxWidth()
-                .maxWidth(850.px) // Wider for dominance
-                .padding(top = 40.px, bottom = 40.px, left = 20.px, right = 20.px)
-                .backgroundColor(rgb(40, 40, 60)) // Slightly lighter background for content
-                .borderRadius(0.px), // Sharp edges for power
-            horizontalAlignment = Alignment.CenterHorizontally,
-        ) {
-            H1 {
-                Span({
-                    style {
-                        color(rgb(220, 0, 0)) // Strong red for power
-                        fontWeight(700) // Bold for dominance
-                        fontSize(36.px)
-                        letterSpacing(1.px)
-                    }
-                }) {
-                    Text("LAWS 8-17: ACQUIRE POWER IN EVERY SOCIAL INTERACTION")
-                }
-            }
+        VerticalSpacer(40)
 
-            P {
-                Span({
-                    style {
-                        color(rgb(200, 200, 200)) // Light gray
-                        fontWeight(500)
-                        fontSize(18.px)
-                        letterSpacing(0.5.px)
-                        textAlign("center")
-                    }
-                }) {
-                    Text(
-                        "These laws focus on how to GAIN and MAINTAIN power in social situations. Master these principles to INFLUENCE and CONTROL social dynamics.",
-                    )
-                }
-            }
+        // Laws with power styling
+        LawBox {
+            LawTitle(title = "LAW 8: MAKE OTHERS COME TO YOU – USE BAIT IF NECESSARY")
+            LawDescription(
+                description = "Home court advantage is a real thing, and not just because you are used to your own environment. By making others come to you, you are in control of the situation and can manipulate it to your advantage. Furthermore, you are forcing the opponent to adapt and change their strategy to fit your own, which is a powerful position to be in.",
+            )
+        }
 
-            Spacer()
-            Div({ style { height(40.px) } })
+        LawBox {
+            LawTitle(title = "LAW 9: WIN THROUGH YOUR ACTIONS, NEVER THROUGH ARGUMENT")
+            LawDescription(
+                description = "The best way to win an argument is to not have one. By using your actions to prove your point, you are not only avoiding the pitfalls of a verbal argument, but you are also showing the other person that you are willing to put in the work to prove your point. This shows both that you are not afraid of hard work and that you are willing to do what it takes to win.",
+            )
+        }
 
-            // Laws with power styling
-            Box(
-                Modifier
-                    .margin(bottom = 30.px)
-                    .padding(20.px)
-                    .backgroundColor(rgb(50, 50, 70))
-                    .borderRadius(4.px)
-            ) {
-                Column {
-                    H2 {
-                        Span({
-                            style {
-                                color(rgb(255, 50, 50)) // Bright red
-                                fontWeight(700)
-                                fontSize(24.px)
-                                letterSpacing(0.8.px)
-                            }
-                        }) {
-                            Text("LAW 8: MAKE OTHERS COME TO YOU – USE BAIT IF NECESSARY")
-                        }
-                    }
-                    P {
-                        Span({
-                            style {
-                                color(rgb(220, 220, 220))
-                                fontSize(16.px)
-                                lineHeight("1.6")
-                                fontWeight(500)
-                            }
-                        }) {
-                            Text(
-                                "When you FORCE the other person to act, YOU are the one in CONTROL. It is always better to make your opponent come to you, abandoning his own plans in the process. LURE him with fabulous gains – then ATTACK.",
-                            )
-                        }
-                    }
-                }
-            }
+        LawBox {
+            LawTitle(title = "LAW 10: INFECTION: AVOID THE UNHAPPY AND UNLUCKY")
+            LawDescription(
+                description = "Siding with the winning team is a great way to ensure that you are on the winning side. By associating with those who are unhappy or unlucky, you are only bringing yourself down and making it harder for yourself to succeed. Instead, surround yourself with those who are happy and successful, and you will find that you are much more likely to succeed as well.",
+            )
+        }
 
-            Box(
-                Modifier
-                    .margin(bottom = 30.px)
-                    .padding(20.px)
-                    .backgroundColor(rgb(50, 50, 70))
-                    .borderRadius(4.px)
-            ) {
-                Column {
-                    H2 {
-                        Span({
-                            style {
-                                color(rgb(255, 50, 50))
-                                fontWeight(700)
-                                fontSize(24.px)
-                                letterSpacing(0.8.px)
-                            }
-                        }) {
-                            Text("LAW 9: WIN THROUGH YOUR ACTIONS, NEVER THROUGH ARGUMENT")
-                        }
-                    }
-                    P {
-                        Span({
-                            style {
-                                color(rgb(220, 220, 220))
-                                fontSize(16.px)
-                                lineHeight("1.6")
-                                fontWeight(500)
-                            }
-                        }) {
-                            Text(
-                                "Any momentary triumph you think you have gained through argument is really a Pyrrhic victory: The resentment and ill will you stir up is STRONGER and lasts LONGER than any momentary change of opinion. It is much more POWERFUL to get others to agree with you through your ACTIONS, without saying a word.",
-                            )
-                        }
-                    }
-                }
-            }
+        LawBox {
+            LawTitle(title = "LAW 11: LEARN TO KEEP PEOPLE DEPENDENT ON YOU")
+            LawDescription(
+                description = "Independence is like a drug in the sense that one taste of it can be incredibly addicting and leave a person with want for more. By stopping people from ever seeing it at all, keeping them dependent on you and your skills, you create a cycle that serves to give you the upper hand as the most knowledgeable at all times.",
+            )
+        }
 
-            Box(
-                Modifier
-                    .margin(bottom = 30.px)
-                    .padding(20.px)
-                    .backgroundColor(rgb(50, 50, 70))
-                    .borderRadius(4.px)
-            ) {
-                Column {
-                    H2 {
-                        Span({
-                            style {
-                                color(rgb(255, 50, 50))
-                                fontWeight(700)
-                                fontSize(24.px)
-                                letterSpacing(0.8.px)
-                            }
-                        }) {
-                            Text("LAW 10: INFECTION: AVOID THE UNHAPPY AND UNLUCKY")
-                        }
-                    }
-                    P {
-                        Span({
-                            style {
-                                color(rgb(220, 220, 220))
-                                fontSize(16.px)
-                                lineHeight("1.6")
-                                fontWeight(500)
-                            }
-                        }) {
-                            Text(
-                                "You can DIE from someone else's misery – emotional states are as infectious as diseases. You may feel you are helping the drowning man but you are only precipitating your own DISASTER. The unfortunate sometimes draw misfortune on themselves; they will also draw it on YOU. Associate with the HAPPY and FORTUNATE instead.",
-                            )
-                        }
-                    }
-                }
-            }
+        LawBox {
+            LawTitle(title = "LAW 12: USE SELECTIVE HONESTY AND GENEROSITY TO DISARM YOUR VICTIM")
+            LawDescription(
+                description = "Actions that are honest and generous are often seen as a sign of weakness, but they can also be used to disarm your opponent. By showing a small amount of honesty or generosity, you can create a false sense of security in your opponent, which can then be exploited to your advantage. This is especially effective when paired with Law 3, as it allows you to gain information while also disarming your opponent.",
+            )
+        }
 
-            Box(
-                Modifier
-                    .margin(bottom = 30.px)
-                    .padding(20.px)
-                    .backgroundColor(rgb(50, 50, 70))
-                    .borderRadius(4.px)
-            ) {
-                Column {
-                    H2 {
-                        Span({
-                            style {
-                                color(rgb(255, 50, 50))
-                                fontWeight(700)
-                                fontSize(24.px)
-                                letterSpacing(0.8.px)
-                            }
-                        }) {
-                            Text("LAW 11: LEARN TO KEEP PEOPLE DEPENDENT ON YOU")
-                        }
-                    }
-                    P {
-                        Span({
-                            style {
-                                color(rgb(220, 220, 220))
-                                fontSize(16.px)
-                                lineHeight("1.6")
-                                fontWeight(500)
-                            }
-                        }) {
-                            Text(
-                                "To maintain your independence you must always be NEEDED and WANTED. The more you are relied on, the more FREEDOM you have. Make people depend on you for their happiness and prosperity and you have NOTHING TO FEAR. Never teach them enough so that they can do without you.",
-                            )
-                        }
-                    }
-                }
-            }
+        LawBox {
+            LawTitle(title = "LAW 13: WHEN ASKING FOR HELP, APPEAL TO PEOPLE'S SELF-INTEREST, NEVER TO THEIR MERCY")
+            LawDescription(
+                description = "When bargaining with someone, using a chip that actually benefits them will always be more reliable and potentially rewarding than leaving yourself at the other's mercy. This attitude itself is inherently lacking in power.",
+            )
+        }
 
-            Box(
-                Modifier
-                    .margin(bottom = 30.px)
-                    .padding(20.px)
-                    .backgroundColor(rgb(50, 50, 70))
-                    .borderRadius(4.px)
-            ) {
-                Column {
-                    H2 {
-                        Span({
-                            style {
-                                color(rgb(255, 50, 50))
-                                fontWeight(700)
-                                fontSize(24.px)
-                                letterSpacing(0.8.px)
-                            }
-                        }) {
-                            Text("LAW 12: USE SELECTIVE HONESTY AND GENEROSITY TO DISARM YOUR VICTIM")
-                        }
-                    }
-                    P {
-                        Span({
-                            style {
-                                color(rgb(220, 220, 220))
-                                fontSize(16.px)
-                                lineHeight("1.6")
-                                fontWeight(500)
-                            }
-                        }) {
-                            Text(
-                                "One sincere and honest move will cover over dozens of dishonest ones. Open-hearted gestures of honesty and generosity bring down the guard of even the most suspicious people. Once your selective honesty opens a hole in their armor, you can DECEIVE and MANIPULATE them at will.",
-                            )
-                        }
-                    }
-                }
-            }
+        LawBox {
+            LawTitle(title = "LAW 14: POSE AS A FRIEND, WORK AS A SPY")
+            LawDescription(
+                description = "As mentioned in Law 3, information is worth more than gold. The best way to obtain that information is through careful conversation and observation, which is easiest done when posing as a friend. This constant spying will allow you to detect weaknesses and intentions that can be used to your advantage in the future.",
+            )
+        }
 
-            Box(
-                Modifier
-                    .margin(bottom = 30.px)
-                    .padding(20.px)
-                    .backgroundColor(rgb(50, 50, 70))
-                    .borderRadius(4.px)
-            ) {
-                Column {
-                    H2 {
-                        Span({
-                            style {
-                                color(rgb(255, 50, 50))
-                                fontWeight(700)
-                                fontSize(24.px)
-                                letterSpacing(0.8.px)
-                            }
-                        }) {
-                            Text("LAW 13: WHEN ASKING FOR HELP, APPEAL TO PEOPLE'S SELF-INTEREST, NEVER TO THEIR MERCY")
-                        }
-                    }
-                    P {
-                        Span({
-                            style {
-                                color(rgb(220, 220, 220))
-                                fontSize(16.px)
-                                lineHeight("1.6")
-                                fontWeight(500)
-                            }
-                        }) {
-                            Text(
-                                "If you need to turn to an ally for help, do not bother to remind him of your past assistance and good deeds. He will find a way to IGNORE you. Instead, uncover something in your request, or in your alliance with him, that will BENEFIT him, and emphasize it out of all proportion. He will respond ENTHUSIASTICALLY when he sees something to be gained for himself.",
-                            )
-                        }
-                    }
-                }
-            }
+        LawBox {
+            LawTitle(title = "LAW 15: CRUSH YOUR ENEMY TOTALLY")
+            LawDescription(
+                description = "Allowing your enemy to escape with even a small amount of power or glimmer of hope gives them the opportunity to reconvene and rebel against your accumulation of their power. Only by completely destroying your enemy can you ensure that they will not return to haunt you and, if Law 2 is properly utilized, these enemies can become your greatest allies.",
+            )
+        }
 
-            Box(
-                Modifier
-                    .margin(bottom = 30.px)
-                    .padding(20.px)
-                    .backgroundColor(rgb(50, 50, 70))
-                    .borderRadius(4.px)
-            ) {
-                Column {
-                    H2 {
-                        Span({
-                            style {
-                                color(rgb(255, 50, 50))
-                                fontWeight(700)
-                                fontSize(24.px)
-                                letterSpacing(0.8.px)
-                            }
-                        }) {
-                            Text("LAW 14: POSE AS A FRIEND, WORK AS A SPY")
-                        }
-                    }
-                    P {
-                        Span({
-                            style {
-                                color(rgb(220, 220, 220))
-                                fontSize(16.px)
-                                lineHeight("1.6")
-                                fontWeight(500)
-                            }
-                        }) {
-                            Text(
-                                "Knowing about your rival is CRITICAL. Use spies to gather valuable information that will keep you a step ahead. Better still: Play the spy yourself. In polite social encounters, learn to PROBE. Ask indirect questions to get people to reveal their weaknesses and intentions. There is no occasion that is not an opportunity for ARTFUL SPYING.",
-                            )
-                        }
-                    }
-                }
-            }
+        LawBox {
+            LawTitle(title = "LAW 16: USE ABSENCE TO INCREASE RESPECT AND HONOR")
+            LawDescription(
+                description = "Extremely similar to Law 4, this one promotes the idea of using absence to increase your power. By removing yourself from a situation, you can create a sense of longing and desire for your presence. However, it is important to note that this can only be used once an established presence has been made, so that there is something to miss in the eyes of others.",
+            )
+        }
 
-            Box(
-                Modifier
-                    .margin(bottom = 30.px)
-                    .padding(20.px)
-                    .backgroundColor(rgb(50, 50, 70))
-                    .borderRadius(4.px)
-            ) {
-                Column {
-                    H2 {
-                        Span({
-                            style {
-                                color(rgb(255, 50, 50))
-                                fontWeight(700)
-                                fontSize(24.px)
-                                letterSpacing(0.8.px)
-                            }
-                        }) {
-                            Text("LAW 15: CRUSH YOUR ENEMY TOTALLY")
-                        }
-                    }
-                    P {
-                        Span({
-                            style {
-                                color(rgb(220, 220, 220))
-                                fontSize(16.px)
-                                lineHeight("1.6")
-                                fontWeight(500)
-                            }
-                        }) {
-                            Text(
-                                "All great leaders since Moses have known that a feared enemy must be CRUSHED COMPLETELY. (Sometimes they have learned this the hard way.) If one ember is left alight, no matter how dimly it smolders, a fire will eventually break out. More is lost through stopping halfway than through TOTAL ANNIHILATION: The enemy will recover, and will seek revenge. CRUSH him, not only in body but in spirit.",
-                            )
-                        }
-                    }
-                }
-            }
-
-            Box(
-                Modifier
-                    .margin(bottom = 30.px)
-                    .padding(20.px)
-                    .backgroundColor(rgb(50, 50, 70))
-                    .borderRadius(4.px)
-            ) {
-                Column {
-                    H2 {
-                        Span({
-                            style {
-                                color(rgb(255, 50, 50))
-                                fontWeight(700)
-                                fontSize(24.px)
-                                letterSpacing(0.8.px)
-                            }
-                        }) {
-                            Text("LAW 16: USE ABSENCE TO INCREASE RESPECT AND HONOR")
-                        }
-                    }
-                    P {
-                        Span({
-                            style {
-                                color(rgb(220, 220, 220))
-                                fontSize(16.px)
-                                lineHeight("1.6")
-                                fontWeight(500)
-                            }
-                        }) {
-                            Text(
-                                "Too much circulation makes the price go down: The more you are seen and heard from, the more COMMON you appear. If you are already established in a group, temporary withdrawal from it will make you more talked about, even more ADMIRED. You must learn when to LEAVE. Create value through SCARCITY.",
-                            )
-                        }
-                    }
-                }
-            }
-
-            Box(
-                Modifier
-                    .margin(bottom = 30.px)
-                    .padding(20.px)
-                    .backgroundColor(rgb(50, 50, 70))
-                    .borderRadius(4.px)
-            ) {
-                Column {
-                    H2 {
-                        Span({
-                            style {
-                                color(rgb(255, 50, 50))
-                                fontWeight(700)
-                                fontSize(24.px)
-                                letterSpacing(0.8.px)
-                            }
-                        }) {
-                            Text("LAW 17: KEEP OTHERS IN SUSPENDED TERROR: CULTIVATE AN AIR OF UNPREDICTABILITY")
-                        }
-                    }
-                    P {
-                        Span({
-                            style {
-                                color(rgb(220, 220, 220))
-                                fontSize(16.px)
-                                lineHeight("1.6")
-                                fontWeight(500)
-                            }
-                        }) {
-                            Text(
-                                "Humans are creatures of habit with an insatiable need to see familiarity in other people's actions. Your predictability gives them a sense of CONTROL. Turn the tables: Be deliberately UNPREDICTABLE. Behavior that seems to have no consistency or purpose will keep them OFF-BALANCE, and they will wear themselves out trying to explain your moves. Taken to an extreme, this strategy can INTIMIDATE and TERRORIZE.",
-                            )
-                        }
-                    }
-                }
-            }
+        LawBox {
+            LawTitle(title = "LAW 17: KEEP OTHERS IN SUSPENDED TERROR: CULTIVATE AN AIR OF UNPREDICTABILITY")
+            LawDescription(
+                description = "If you are predictable, it is incredibly easy to be manipulated. Furthermore, when paired with Law 3, it becomes nearly impossible for anyone to put a profile of you together and therefore lack any amount of control over you whatsoever. Unpredictability makes you the limiting factor, so that others are forced to adapt to you and your whims, giving you immense power over their actions.",
+            )
         }
     }
 }
