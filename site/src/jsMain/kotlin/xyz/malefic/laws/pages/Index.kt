@@ -1,41 +1,62 @@
 package xyz.malefic.laws.pages
 
 import androidx.compose.runtime.Composable
-import com.varabyte.kobweb.compose.css.FontWeight
-import com.varabyte.kobweb.compose.css.TextAlign
-import com.varabyte.kobweb.compose.foundation.layout.Arrangement
 import com.varabyte.kobweb.compose.foundation.layout.Box
 import com.varabyte.kobweb.compose.foundation.layout.Column
 import com.varabyte.kobweb.compose.foundation.layout.Spacer
 import com.varabyte.kobweb.compose.ui.Alignment
 import com.varabyte.kobweb.compose.ui.Modifier
-import com.varabyte.kobweb.compose.ui.graphics.Colors
-import com.varabyte.kobweb.compose.ui.modifiers.*
+import com.varabyte.kobweb.compose.ui.modifiers.backgroundColor
+import com.varabyte.kobweb.compose.ui.modifiers.borderRadius
+import com.varabyte.kobweb.compose.ui.modifiers.boxShadow
+import com.varabyte.kobweb.compose.ui.modifiers.fillMaxSize
+import com.varabyte.kobweb.compose.ui.modifiers.fillMaxWidth
+import com.varabyte.kobweb.compose.ui.modifiers.margin
+import com.varabyte.kobweb.compose.ui.modifiers.maxWidth
+import com.varabyte.kobweb.compose.ui.modifiers.padding
 import com.varabyte.kobweb.core.Page
-import org.jetbrains.compose.web.css.*
-import org.jetbrains.compose.web.dom.*
+import org.jetbrains.compose.web.css.color
+import org.jetbrains.compose.web.css.fontSize
+import org.jetbrains.compose.web.css.fontWeight
+import org.jetbrains.compose.web.css.height
+import org.jetbrains.compose.web.css.letterSpacing
+import org.jetbrains.compose.web.css.lineHeight
+import org.jetbrains.compose.web.css.px
+import org.jetbrains.compose.web.css.rgb
+import org.jetbrains.compose.web.css.rgba
+import org.jetbrains.compose.web.css.textAlign
+import org.jetbrains.compose.web.dom.Div
+import org.jetbrains.compose.web.dom.H1
+import org.jetbrains.compose.web.dom.H2
+import org.jetbrains.compose.web.dom.P
+import org.jetbrains.compose.web.dom.Span
+import org.jetbrains.compose.web.dom.Text
 import xyz.malefic.laws.components.Navigation
 
 @Page
 @Composable
 fun HomePage() {
     Column(
-        modifier = Modifier
-            .fillMaxSize()
-            .backgroundColor(rgb(240, 240, 240)), // Light gray background - neutral
-        horizontalAlignment = Alignment.CenterHorizontally
+        modifier =
+            Modifier
+                .fillMaxSize()
+                .backgroundColor(rgb(240, 240, 240)),
+        // Light gray background - neutral
+        horizontalAlignment = Alignment.CenterHorizontally,
     ) {
         Navigation()
 
         Column(
-            modifier = Modifier
-                .fillMaxWidth()
-                .maxWidth(800.px)
-                .padding(30.px)
-                .backgroundColor(rgb(248, 248, 248)) // Slightly lighter gray for content area
-                .borderRadius(6.px) // Subtle rounded corners
-                .boxShadow(offsetX = 0.px, offsetY = 2.px, blurRadius = 10.px, color = rgba(0, 0, 0, 0.1)), // Subtle shadow
-            horizontalAlignment = Alignment.CenterHorizontally
+            modifier =
+                Modifier
+                    .fillMaxWidth()
+                    .maxWidth(800.px)
+                    .padding(30.px)
+                    .backgroundColor(rgb(248, 248, 248)) // Slightly lighter gray for content area
+                    .borderRadius(6.px) // Subtle rounded corners
+                    .boxShadow(offsetX = 0.px, offsetY = 2.px, blurRadius = 10.px, color = rgba(0, 0, 0, 0.1)),
+            // Subtle shadow
+            horizontalAlignment = Alignment.CenterHorizontally,
         ) {
             H1 {
                 Span({
@@ -59,7 +80,9 @@ fun HomePage() {
                         textAlign("center")
                     }
                 }) {
-                    Text("Welcome to the 48 Laws of Power, a collection of timeless principles for achieving and maintaining power in any situation. These laws, derived from the writings of Robert Greene, provide insights into the dynamics of power, influence, and strategic thinking.")
+                    Text(
+                        "Welcome to the 48 Laws of Power, a collection of timeless principles for achieving and maintaining power in any situation. These laws, derived from the writings of Robert Greene, provide insights into the dynamics of power, influence, and strategic thinking.",
+                    )
                 }
             }
 
@@ -72,7 +95,9 @@ fun HomePage() {
                         textAlign("center")
                     }
                 }) {
-                    Text("The laws have been organized into six thematic groups, each focusing on a different aspect of power dynamics. Explore each section to learn how to master the art of power.")
+                    Text(
+                        "The laws have been organized into six thematic groups, each focusing on a different aspect of power dynamics. Explore each section to learn how to master the art of power.",
+                    )
                 }
             }
 
@@ -86,7 +111,7 @@ fun HomePage() {
                     .padding(15.px)
                     .fillMaxWidth()
                     .backgroundColor(rgb(245, 245, 245)) // Very light gray
-                    .borderRadius(4.px)
+                    .borderRadius(4.px),
             ) {
                 Column {
                     H2 {
@@ -108,7 +133,9 @@ fun HomePage() {
                                 lineHeight("1.5")
                             }
                         }) {
-                            Text("These laws focus on the importance of being mindful of what you say and do. Your words and actions can either build your power or destroy it.")
+                            Text(
+                                "These laws focus on the importance of being mindful of what you say and do. Your words and actions can either build your power or destroy it.",
+                            )
                         }
                     }
                 }
@@ -120,7 +147,7 @@ fun HomePage() {
                     .padding(15.px)
                     .fillMaxWidth()
                     .backgroundColor(rgb(245, 245, 245))
-                    .borderRadius(4.px)
+                    .borderRadius(4.px),
             ) {
                 Column {
                     H2 {
@@ -142,7 +169,9 @@ fun HomePage() {
                                 lineHeight("1.5")
                             }
                         }) {
-                            Text("These laws focus on how to gain and maintain power in social situations. Master these principles to influence and control social dynamics.")
+                            Text(
+                                "These laws focus on how to gain and maintain power in social situations. Master these principles to influence and control social dynamics.",
+                            )
                         }
                     }
                 }
@@ -154,7 +183,7 @@ fun HomePage() {
                     .padding(15.px)
                     .fillMaxWidth()
                     .backgroundColor(rgb(245, 245, 245))
-                    .borderRadius(4.px)
+                    .borderRadius(4.px),
             ) {
                 Column {
                     H2 {
@@ -176,7 +205,9 @@ fun HomePage() {
                                 lineHeight("1.5")
                             }
                         }) {
-                            Text("These laws teach you how to conceal your true intentions while gathering information that gives you an advantage. The art of deception and intelligence gathering is crucial to maintaining power.")
+                            Text(
+                                "These laws teach you how to conceal your true intentions while gathering information that gives you an advantage. The art of deception and intelligence gathering is crucial to maintaining power.",
+                            )
                         }
                     }
                 }
@@ -188,7 +219,7 @@ fun HomePage() {
                     .padding(15.px)
                     .fillMaxWidth()
                     .backgroundColor(rgb(245, 245, 245))
-                    .borderRadius(4.px)
+                    .borderRadius(4.px),
             ) {
                 Column {
                     H2 {
@@ -210,7 +241,9 @@ fun HomePage() {
                                 lineHeight("1.5")
                             }
                         }) {
-                            Text("These laws focus on how to shape others' perception of you. By controlling your image and how others see you, you can gain significant power and influence.")
+                            Text(
+                                "These laws focus on how to shape others' perception of you. By controlling your image and how others see you, you can gain significant power and influence.",
+                            )
                         }
                     }
                 }
@@ -222,7 +255,7 @@ fun HomePage() {
                     .padding(15.px)
                     .fillMaxWidth()
                     .backgroundColor(rgb(245, 245, 245))
-                    .borderRadius(4.px)
+                    .borderRadius(4.px),
             ) {
                 Column {
                     H2 {
@@ -244,7 +277,9 @@ fun HomePage() {
                                 lineHeight("1.5")
                             }
                         }) {
-                            Text("These laws teach you how to maintain your position of power by standing firm in your convictions while winning the hearts and minds of those around you.")
+                            Text(
+                                "These laws teach you how to maintain your position of power by standing firm in your convictions while winning the hearts and minds of those around you.",
+                            )
                         }
                     }
                 }
@@ -256,7 +291,7 @@ fun HomePage() {
                     .padding(15.px)
                     .fillMaxWidth()
                     .backgroundColor(rgb(245, 245, 245))
-                    .borderRadius(4.px)
+                    .borderRadius(4.px),
             ) {
                 Column {
                     H2 {
@@ -278,7 +313,9 @@ fun HomePage() {
                                 lineHeight("1.5")
                             }
                         }) {
-                            Text("The final laws focus on achieving ultimate power by eliminating threats and ascending to greatness. These laws teach you how to deal with enemies and secure your position at the top.")
+                            Text(
+                                "The final laws focus on achieving ultimate power by eliminating threats and ascending to greatness. These laws teach you how to deal with enemies and secure your position at the top.",
+                            )
                         }
                     }
                 }

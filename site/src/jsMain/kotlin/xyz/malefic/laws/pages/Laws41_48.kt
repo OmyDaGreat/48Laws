@@ -1,15 +1,11 @@
 package xyz.malefic.laws.pages
 
 import androidx.compose.runtime.Composable
-import com.varabyte.kobweb.compose.css.FontWeight
-import com.varabyte.kobweb.compose.css.TextAlign
 import com.varabyte.kobweb.compose.foundation.layout.Box
 import com.varabyte.kobweb.compose.foundation.layout.Column
-import com.varabyte.kobweb.compose.foundation.layout.Row
 import com.varabyte.kobweb.compose.foundation.layout.Spacer
 import com.varabyte.kobweb.compose.ui.Alignment
 import com.varabyte.kobweb.compose.ui.Modifier
-import com.varabyte.kobweb.compose.ui.graphics.Colors
 import com.varabyte.kobweb.compose.ui.modifiers.*
 import com.varabyte.kobweb.core.Page
 import org.jetbrains.compose.web.css.*
@@ -20,18 +16,21 @@ import xyz.malefic.laws.components.Navigation
 @Composable
 fun Laws41_48Page() {
     Column(
-        modifier = Modifier
-            .fillMaxSize()
-            .backgroundColor(rgb(10, 10, 10)), // Almost black background for dramatic effect
+        modifier =
+            Modifier
+                .fillMaxSize()
+                .backgroundColor(rgb(10, 10, 10)),
+        // Almost black background for dramatic effect
         horizontalAlignment = Alignment.CenterHorizontally,
     ) {
         Navigation()
 
         Column(
-            modifier = Modifier
-                .fillMaxWidth()
-                .maxWidth(800.px)
-                .padding(top = 40.px, bottom = 40.px, left = 20.px, right = 20.px),
+            modifier =
+                Modifier
+                    .fillMaxWidth()
+                    .maxWidth(800.px)
+                    .padding(top = 40.px, bottom = 40.px, left = 20.px, right = 20.px),
             horizontalAlignment = Alignment.CenterHorizontally,
         ) {
             H1 {
@@ -73,7 +72,7 @@ fun Laws41_48Page() {
                     .padding(top = 30.px, bottom = 30.px, left = 30.px, right = 30.px)
                     .backgroundColor(rgb(30, 0, 0)) // Dark red background
                     .borderRadius(0.px) // Sharp edges for dramatic effect
-                    .boxShadow(offsetX = 10.px, offsetY = 10.px, blurRadius = 0.px, color = rgb(100, 0, 0)) // Hard shadow
+                    .boxShadow(offsetX = 10.px, offsetY = 10.px, blurRadius = 0.px, color = rgb(100, 0, 0)), // Hard shadow
             ) {
                 Column {
                     H2 {
@@ -111,7 +110,7 @@ fun Laws41_48Page() {
                     .padding(top = 30.px, bottom = 30.px, left = 30.px, right = 30.px)
                     .backgroundColor(rgb(40, 40, 40)) // Dark gray
                     .borderRadius(0.px)
-                    .boxShadow(offsetX = (-10).px, offsetY = 10.px, blurRadius = 0.px, color = rgb(100, 100, 100))
+                    .boxShadow(offsetX = (-10).px, offsetY = 10.px, blurRadius = 0.px, color = rgb(100, 100, 100)),
             ) {
                 Column {
                     H2 {
@@ -149,7 +148,7 @@ fun Laws41_48Page() {
                     .padding(top = 30.px, bottom = 30.px, left = 30.px, right = 30.px)
                     .backgroundColor(rgb(30, 0, 0)) // Dark red background
                     .borderRadius(0.px)
-                    .boxShadow(offsetX = 10.px, offsetY = 10.px, blurRadius = 0.px, color = rgb(100, 0, 0))
+                    .boxShadow(offsetX = 10.px, offsetY = 10.px, blurRadius = 0.px, color = rgb(100, 0, 0)),
             ) {
                 Column {
                     H2 {
@@ -187,7 +186,7 @@ fun Laws41_48Page() {
                     .padding(top = 30.px, bottom = 30.px, left = 30.px, right = 30.px)
                     .backgroundColor(rgb(40, 40, 40)) // Dark gray
                     .borderRadius(0.px)
-                    .boxShadow(offsetX = (-10).px, offsetY = 10.px, blurRadius = 0.px, color = rgb(100, 100, 100))
+                    .boxShadow(offsetX = (-10).px, offsetY = 10.px, blurRadius = 0.px, color = rgb(100, 100, 100)),
             ) {
                 Column {
                     H2 {
@@ -225,7 +224,7 @@ fun Laws41_48Page() {
                     .padding(top = 30.px, bottom = 30.px, left = 30.px, right = 30.px)
                     .backgroundColor(rgb(30, 0, 0)) // Dark red background
                     .borderRadius(0.px)
-                    .boxShadow(offsetX = 10.px, offsetY = 10.px, blurRadius = 0.px, color = rgb(100, 0, 0))
+                    .boxShadow(offsetX = 10.px, offsetY = 10.px, blurRadius = 0.px, color = rgb(100, 0, 0)),
             ) {
                 Column {
                     H2 {
@@ -263,7 +262,7 @@ fun Laws41_48Page() {
                     .padding(top = 30.px, bottom = 30.px, left = 30.px, right = 30.px)
                     .backgroundColor(rgb(40, 40, 40)) // Dark gray
                     .borderRadius(0.px)
-                    .boxShadow(offsetX = (-10).px, offsetY = 10.px, blurRadius = 0.px, color = rgb(100, 100, 100))
+                    .boxShadow(offsetX = (-10).px, offsetY = 10.px, blurRadius = 0.px, color = rgb(100, 100, 100)),
             ) {
                 Column {
                     H2 {
@@ -301,7 +300,7 @@ fun Laws41_48Page() {
                     .padding(top = 30.px, bottom = 30.px, left = 30.px, right = 30.px)
                     .backgroundColor(rgb(30, 0, 0)) // Dark red background
                     .borderRadius(0.px)
-                    .boxShadow(offsetX = 10.px, offsetY = 10.px, blurRadius = 0.px, color = rgb(100, 0, 0))
+                    .boxShadow(offsetX = 10.px, offsetY = 10.px, blurRadius = 0.px, color = rgb(100, 0, 0)),
             ) {
                 Column {
                     H2 {
@@ -339,7 +338,7 @@ fun Laws41_48Page() {
                     .padding(top = 30.px, bottom = 30.px, left = 30.px, right = 30.px)
                     .backgroundColor(rgb(40, 40, 40)) // Dark gray
                     .borderRadius(0.px)
-                    .boxShadow(offsetX = (-10).px, offsetY = 10.px, blurRadius = 0.px, color = rgb(100, 100, 100))
+                    .boxShadow(offsetX = (-10).px, offsetY = 10.px, blurRadius = 0.px, color = rgb(100, 100, 100)),
             ) {
                 Column {
                     H2 {

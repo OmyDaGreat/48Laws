@@ -28,5 +28,6 @@ fun Navigation() {
         Link(path = "/laws25-32", text = "Laws 25-32")
         Link(path = "/laws33-40", text = "Laws 33-40")
         Link(path = "/laws41-48", text = "Laws 41-48")
+        Link(path = "/about", text = "About")
     }
 }
