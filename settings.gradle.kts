@@ -15,7 +15,7 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "multipage"
+rootProject.name = "48Laws"
 
 include(":site")
 include("server")

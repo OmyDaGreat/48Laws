@@ -1,14 +1,14 @@
 site:
-  title: "Malefic Kobweb Multi Page Template"
+  title: "The 48 Laws of Power - Websitified!"
 
 server:
   files:
     dev:
       contentRoot: "build/processedResources/js/main/public"
-      script: "build/kotlin-webpack/js/developmentExecutable/multipage.js"
-      api: "build/libs/multipage.jar"
+      script: "build/kotlin-webpack/js/developmentExecutable/laws.js"
+      api: "build/libs/laws.jar"
     prod:
-      script: "build/kotlin-webpack/js/productionExecutable/multipage.js"
+      script: "build/kotlin-webpack/js/productionExecutable/laws.js"
       siteRoot: ".kobweb/site"
 
   port: 8080
