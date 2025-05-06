@@ -1,38 +1,56 @@
 package xyz.malefic.laws.pages
 
 import androidx.compose.runtime.Composable
-import com.varabyte.kobweb.compose.css.FontWeight
-import com.varabyte.kobweb.compose.css.TextAlign
 import com.varabyte.kobweb.compose.foundation.layout.Box
 import com.varabyte.kobweb.compose.foundation.layout.Column
-import com.varabyte.kobweb.compose.foundation.layout.Row
 import com.varabyte.kobweb.compose.foundation.layout.Spacer
 import com.varabyte.kobweb.compose.ui.Alignment
 import com.varabyte.kobweb.compose.ui.Modifier
-import com.varabyte.kobweb.compose.ui.graphics.Colors
-import com.varabyte.kobweb.compose.ui.modifiers.*
+import com.varabyte.kobweb.compose.ui.modifiers.backgroundColor
+import com.varabyte.kobweb.compose.ui.modifiers.borderRadius
+import com.varabyte.kobweb.compose.ui.modifiers.fillMaxSize
+import com.varabyte.kobweb.compose.ui.modifiers.fillMaxWidth
+import com.varabyte.kobweb.compose.ui.modifiers.margin
+import com.varabyte.kobweb.compose.ui.modifiers.maxWidth
+import com.varabyte.kobweb.compose.ui.modifiers.padding
 import com.varabyte.kobweb.core.Page
-import org.jetbrains.compose.web.css.*
-import org.jetbrains.compose.web.dom.*
+import org.jetbrains.compose.web.css.color
+import org.jetbrains.compose.web.css.fontSize
+import org.jetbrains.compose.web.css.fontStyle
+import org.jetbrains.compose.web.css.fontWeight
+import org.jetbrains.compose.web.css.height
+import org.jetbrains.compose.web.css.letterSpacing
+import org.jetbrains.compose.web.css.lineHeight
+import org.jetbrains.compose.web.css.px
+import org.jetbrains.compose.web.css.rgb
+import org.jetbrains.compose.web.dom.Div
+import org.jetbrains.compose.web.dom.H1
+import org.jetbrains.compose.web.dom.H2
+import org.jetbrains.compose.web.dom.P
+import org.jetbrains.compose.web.dom.Span
+import org.jetbrains.compose.web.dom.Text
 import xyz.malefic.laws.components.Navigation
 
 @Page("/laws1-7")
 @Composable
 fun Laws1_7Page() {
     Column(
-        modifier = Modifier
-            .fillMaxSize()
-            .backgroundColor(rgb(245, 245, 240)), // Soft off-white background for mindfulness
+        modifier =
+            Modifier
+                .fillMaxSize()
+                .backgroundColor(rgb(245, 245, 240)),
+        // Soft off-white background for mindfulness
         horizontalAlignment = Alignment.CenterHorizontally,
     ) {
         Navigation()
 
         Column(
-            modifier = Modifier
-                .fillMaxWidth()
-                .maxWidth(700.px) // Slightly narrower for minimalist feel
-                .padding(top = 40.px, bottom = 40.px, left = 20.px, right = 20.px)
-                .borderRadius(4.px),
+            modifier =
+                Modifier
+                    .fillMaxWidth()
+                    .maxWidth(700.px) // Slightly narrower for minimalist feel
+                    .padding(top = 40.px, bottom = 40.px, left = 20.px, right = 20.px)
+                    .borderRadius(4.px),
             horizontalAlignment = Alignment.CenterHorizontally,
         ) {
             H1 {
@@ -58,7 +76,7 @@ fun Laws1_7Page() {
                     }
                 }) {
                     Text(
-                        "The first seven laws focus on the importance of being mindful of what you say and do. Your words and actions can either build your power or destroy it.",
+                        "The maintenance of your reputation depends on constant upkeep as well as thought to the words you use and the actions you take.",
                     )
                 }
             }
@@ -90,7 +108,7 @@ fun Laws1_7Page() {
                             }
                         }) {
                             Text(
-                                "Always make those above you feel comfortably superior. In your desire to please and impress them, do not go too far in displaying your talents or you might accomplish the opposite – inspire fear and insecurity.",
+                                "Make sure to keep those above you in power and influence have the feeling of superiority. However, never let too much of your talent show lest comfort turns into fear.",
                             )
                         }
                     }
@@ -120,7 +138,7 @@ fun Laws1_7Page() {
                             }
                         }) {
                             Text(
-                                "Be wary of friends-they will betray you more quickly, for they are easily aroused to envy. They also become spoiled and tyrannical. But hire a former enemy and he will be more loyal than a friend, because he has more to prove.",
+                                "Compared to prior enemies, friends have much less to prove and thus are more likely to betray you. Enemies, on the other hand, are often more loyal thanks to the opposite. This law can be considered extremely similar to the common saying: \"Keep your friends close, but your enemies closer.\"",
                             )
                         }
                     }
@@ -150,7 +168,7 @@ fun Laws1_7Page() {
                             }
                         }) {
                             Text(
-                                "Keep people off-balance and in the dark by never revealing the purpose behind your actions. If they have no clue what you are up to, they cannot prepare a defense.",
+                                "Information is worth more than gold, and that also applies to motivations. If your rivals are unable to decipher them, they can not create a proper counter strategy. This is especially true in the case of a negotiation.",
                             )
                         }
                     }
@@ -180,7 +198,7 @@ fun Laws1_7Page() {
                             }
                         }) {
                             Text(
-                                "When you are trying to impress people with words, the more you say, the more common you appear, and the less in control. Even if you are saying something banal, it will seem original if you make it vague, open-ended, and sphinx-like.",
+                                "Less is more, and that definitely applies to words as well. Being able to explain a complicated topic in few words is in itself a power move, and the lack of that ability can be taken as a sign of weakness or commonality.",
                             )
                         }
                     }
@@ -210,7 +228,7 @@ fun Laws1_7Page() {
                             }
                         }) {
                             Text(
-                                "Reputation is the cornerstone of power. Through reputation alone you can intimidate and win; once it slips, however, you are vulnerable, and will be attacked on all sides.",
+                                "The prior four laws themselves were already so centered on reputation that seeing where this one is going is not too difficult. If information is worth more than gold, reputation is akin to diamonds. Without a reputation, you are nothing. With a good reputation, you can do anything.",
                             )
                         }
                     }
@@ -240,7 +258,7 @@ fun Laws1_7Page() {
                             }
                         }) {
                             Text(
-                                "Everything is judged by its appearance; what is unseen counts for nothing. Never let yourself get lost in the crowd, then, or buried in oblivion. Stand out. Be conspicuous, at all cost.",
+                                "Pretty simply put, power can only come to those who are seen. Without the spotlight, it is impossible to achieve anything.",
                             )
                         }
                     }
@@ -270,7 +288,7 @@ fun Laws1_7Page() {
                             }
                         }) {
                             Text(
-                                "Use the wisdom, knowledge, and legwork of other people to further your own cause. Not only will such assistance save you valuable time and energy, it will give you a godlike aura of efficiency and speed.",
+                                "Another simple one, but one that is often overlooked because of pesky \"morals.\" To truly obtain power, you must be able to throw those aside in favor of being the most efficient with your own time. Of course, that does not always need to factor in others' time.",
                             )
                         }
                     }
